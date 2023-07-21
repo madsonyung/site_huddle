@@ -7,8 +7,8 @@
     /* --grayish-blue: */ --azul-claro:  hsl(208, 11%, 55%);
 }
 * {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: inherit;
     font-family: "Open Sans", sans-serif;
   }
@@ -256,7 +256,6 @@ background: var(--pink);
   footer .social-media {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   footer .icones {

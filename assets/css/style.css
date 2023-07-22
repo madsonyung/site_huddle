@@ -7,7 +7,7 @@
     /* --grayish-blue: */ --azul-claro:  hsl(208, 11%, 55%);
 }
 * {
-    /* margin: 0; */
+    margin: 0;
     /* padding: 0; */
     box-sizing: inherit;
     font-family: "Open Sans", sans-serif;
@@ -18,9 +18,14 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.15em;
 	margin: 0;
+  width: auto;
 }
 
-h1,
+h1 {
+	font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+}
+
 h2 {
 	font-family: 'Poppins', sans-serif;
   font-size: 2.4em;
@@ -32,14 +37,21 @@ h3 {
   /* font-weight: none; */
 }
 
+
 .text {
   font-family: sans-serif, 'Poppins';
   font-size: 0.8em;
   /* font-weight: none; */
 }
+
 .gap {
   gap: 2em;
 }
+
+.gap1{
+  gap: 1em;
+}
+
 
 header {
     padding: 2em;
@@ -61,6 +73,18 @@ header {
 .tamanho {
   width: 70%;
   margin: auto;
+}
+
+.tamanho50 {
+  width: 50%;
+}
+
+.tamanho90 {
+  width: 120%
+}
+
+.tamanho-texto {
+  width: 33em;
 }
 
 .imagem {
@@ -86,6 +110,10 @@ header {
     gap: 2em;
 }
 
+.flex1 {
+  flex: 1;
+}
+
 
 .btn {
     outline: none;
@@ -106,12 +134,6 @@ header {
     background: var(--pink);
 }
 
-.footer-box {
-  width: 16em;
-  height: 3em;
-  border-radius: 1em;
-  border: none;
-}
 .btn.tam1 {
   padding: 10px 54px;
 }
@@ -191,6 +213,10 @@ background: var(--pink);
   .padding2 {
     padding: 2em;
   }
+
+  .padding1 {
+    padding: 0.5em;
+  }
   
   .feature {
     display: flex;
@@ -240,9 +266,19 @@ background: var(--pink);
 
   footer {
     background-color: hsl(192, 100%, 9%);
-    color: #fff;
+    color: #fff;    
+  }
+
+  footer .flex {
     display: flex;
-    /* padding: 180px 0 60px; */
+    justify-content: space-between;
+  }
+
+  .footer-box {
+    width: 20em;
+    height: 3em;
+    border-radius: 1em;
+    border: none;
   }
   
   /* footer ul {
@@ -263,6 +299,19 @@ background: var(--pink);
     width: 2em;
   }
 
+  .visibilidade {
+    color: #fff;
+    /* visibility: inherit; */
+  }
+
+  .largura-rodape {
+    width: 30em;
+  }
+
+  .largura-texto {
+    width: 15em;
+  }
+
   footer .logo {
     height: 2em;
   }
@@ -279,6 +328,10 @@ background: var(--pink);
     width: 40px;
     text-decoration: none;
   }
+/* muda a cor do icone de preto para branco */
+.cor-icone {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(100%) saturate(0%) hue-rotate(359deg) brightness(105%) contrast(103%);
+}
   
   /* footer p {
     text-align: right;
